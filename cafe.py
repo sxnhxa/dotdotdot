@@ -40,7 +40,8 @@ st.markdown("""
 
     /* 버튼 스타일: 매장의 민트 포인트 */
     .stButton>button {
-        width: 100%; border-radius: 8px;
+        width: 100% !important;
+        border-radius: 8px;
         background-color: #1A1A1A; border: none;
         color: #00FFD1; height: 55px; font-size: 18px; font-weight: 700;
         transition: all 0.2s;
@@ -112,7 +113,7 @@ st.plotly_chart(fig, use_container_width=True)
 
 # 7. 추천 버튼
 st.markdown("<br>", unsafe_allow_html=True)
-if st.button("오늘 나에게 맞는 메뉴 찾기 (AI PICK)"):
+if st.button("오늘 나에게 맞는 메뉴 찾기 (AI PICK)", use_container_width=True):
     with st.spinner("최적의 밸런스를 분석 중..."):
         time.sleep(1)
         picked = random.choice(menus)
