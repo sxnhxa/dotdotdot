@@ -31,6 +31,9 @@ st.markdown("""
     h1 { font-family: 'Inter', sans-serif; font-weight: 700; color: #1A1A1A !important; letter-spacing: -1px; }
     .status-text { color: #666; font-size: 14px; margin-top: -15px; }
     
+    h2, h3 { color: #1A1A1A !important; }
+    [data-testid="stWidgetLabel"] p { color: #1A1A1A !important; }
+    
     /* 티커 */
     .ticker-wrapper {
         width: 100%; overflow: hidden; background: #FFFFFF;

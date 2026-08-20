@@ -1,4 +1,7 @@
-streamlit
-pandas
-numpy
-plotly
+geopandas==1.1.2
+numpy==1.26.4
+numpydoc @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_69xghc3i3n/croot/numpydoc_1718279166747/work
+pandas==2.0.3
+plotly @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_c4cwziyfrp/croot/plotly_1726245572537/work
+streamlit==1.25.0
+streamlit-folium==0.13.0
