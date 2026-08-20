@@ -97,7 +97,7 @@ st.markdown(f"<div class='ticker-wrapper'><div class='ticker'>{ticker_text}</div
 col_h1, col_h2 = st.columns([2, 1])
 with col_h1:
     st.title("DOTDOTDOT TRADING VIEW")
-    st.markdown("<p class='status-text'>실시간 인기 메뉴 트렌드</p>", unsafe_allow_html=True)
+    st.markdown("<p class='status-text'>메뉴 트랜드 (데모)</p>", unsafe_allow_html=True)
 with col_h2:
     st.markdown("<div style='text-align:right;'><p style='color:#999; margin:0; font-size:11px;'>SYSTEM</p><h2 style='margin:0; color:#00FFD1; font-size:22px;'>ACTIVE</h2></div>", unsafe_allow_html=True)
 
@@ -140,7 +140,7 @@ st.info(f"💡 {selected_menu}: {current_theme['desc']}")
 
 # 8. AI 추천 버튼
 st.markdown("<br>", unsafe_allow_html=True)
-if st.button("내 취향 기반 메뉴 추천받기 (AI PICK)", use_container_width=True):
+if st.button("오늘의 메뉴 뽑기 (랜덤)", use_container_width=True):
     with st.spinner("분석 중..."):
         time.sleep(1)
         picked = random.choice(menus)
